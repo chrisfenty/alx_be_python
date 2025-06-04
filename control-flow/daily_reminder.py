@@ -17,15 +17,12 @@ def main():
 
     # Modify reminder based on time sensitivity
     if time_bound == "yes":
-        # Time-bound tasks require immediate attention
-        reminder_message = f"Reminder: {reminder} that requires immediate attention today!"
+    print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+else:
+    if priority == "low":
+        print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
     else:
-        # Non-time-bound, customize for low priority
-        if priority == "low":
-            reminder_message = f"Note: {reminder}. Consider completing it when you have free time."
-        else:
-            # For medium/high not time-bound just print reminder normally
-            reminder_message = f"Reminder: {reminder}."
+        print(f"Reminder: '{task}' is a {priority} priority task.")
 
     # Print final message
     print(reminder_message)
