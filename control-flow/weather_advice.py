@@ -1,5 +1,5 @@
 # weather_advice.py
-weather = input("What is the weather like today? (cold, hot, rainy, snowy, windy): ").lower()
+user_weather = input\(['\"]What\'s the weather like today\? \(sunny\/rainy\/cold\):
 if weather == "cold":
     print("Wear a warm coat and a scarf.")
 elif weather == "hot":
